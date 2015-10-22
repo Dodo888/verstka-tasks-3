@@ -1,0 +1,109 @@
+table
+{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+}
+
+tr
+{
+    border: 1px solid #000000;
+}
+
+td
+{
+    position: relative;
+    text-align: center;
+}
+
+tr:nth-child(even) td:after
+{
+    content: "";
+    position: absolute;
+    background-color: #a3cff2;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    z-index: -2;
+}
+
+td:hover:before
+{
+    content: "";
+    position: absolute;
+    background-color: #cccccc;
+    left: 0;
+    top: -1000px;
+    height: 6000px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+td:hover:after
+{
+    content: "";
+    position: absolute;
+    background-color: #cccccc;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    z-index: -1;
+}
+
+td, td:hover:after
+{
+    width: 130px;
+}
+
+thead tr,
+tfoot tr
+{
+    background: #447bd4;
+}
+
+tbody tr:hover
+{
+    background: #cccccc;
+}
+
+.departure::before
+{
+    display: inline-block;
+    background-image: url(images/departure.png);
+    width: 39px;
+    height: 39px;
+    content: "";
+}
+
+.arrival::before
+{
+    display: inline-block;
+    background-image: url(images/arrival.png);
+    width: 39px;
+    height: 39px;
+    content: "";
+}
+
+input[type="text"]:valid ~ input[type="submit"]
+{
+    display: inline-block;
+}
+
+input[type="text"]:invalid ~ input[type="submit"]
+{
+    display: none;
+}
+
+input[type="text"]:invalid
+{
+    background: #fdd;
+}
+
+input[type="text"]:valid
+{
+    background: #dfd;
+}

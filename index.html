@@ -6,13 +6,227 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Поле для фильтрации по городу -->
         <input
             type="text"
             placeholder="Город отправления"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Arrival/Departure</th>
+                    <th>Flight</th>
+                    <th colspan=2>Airline</th>
+                    <th>Plane</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Terminal</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Type</th>
+                    <th>Arrival/Departure</th>
+                    <th>Flight</th>
+                    <th colspan=2>Airline</th>
+                    <th>Plane</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Terminal</th>
+                    <th>Status</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:00</td>
+                    <td>EI159</td>
+                    <td><img src="images\Aer Lingus.png" alt="Aer Lingus"></td>
+                    <td>Aer Lingus</td>
+                    <td>Airbus A320</td>
+                    <td></td>
+                    <td>Dublin</td>
+                    <td>2</td>
+                    <td>Departed 12:20</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:03</td>
+                    <td>BA562</td>
+                    <td><img src="images\British Airways.png" alt="British Airways"></td>
+                    <td>British Airways</td>
+                    <td>Boeing 737</td>
+                    <td></td>
+                    <td>Milan</td>
+                    <td>5</td>
+                    <td>Departed 12:23</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:04</td>
+                    <td>AC6005</td>
+                    <td><img src="images\Air Canada.png" alt="Air Canada"></td>
+                    <td>Air Canada</td>
+                    <td>Airbus A319</td>
+                    <td>Toronto</td>
+                    <td></td>
+                    <td>4</td>
+                    <td>Landed 12:05</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:04</td>
+                    <td>LH916</td>
+                    <td><img src="images\Lufthansa.png" alt="Lufthansa"></td>
+                    <td>Lufthansa</td>
+                    <td>Boeing 777</td>
+                    <td></td>
+                    <td>Paris</td>
+                    <td>2</td>
+                    <td>Departed 12:30</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:09</td>
+                    <td>SU2584</td>
+                    <td><img src="images\Aeroflot.png" alt="Aeroflot"></td>
+                    <td>Aeroflot</td>
+                    <td>Boeing 747</td>
+                    <td>Yekaterinburg</td>
+                    <td></td>
+                    <td>4</td>
+                    <td>Landed 12:15</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:15</td>
+                    <td>VS7955</td>
+                    <td><img src="images\Virgin.png" alt="Virgin"></td>
+                    <td>Virgin</td>
+                    <td>Boeing 777</td>
+                    <td>Melbourne</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>Expected 13:40</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:20</td>
+                    <td>EK5101</td>
+                    <td><img src="images\Emirates.png" alt="Emirates"></td>
+                    <td>Emirates</td>
+                    <td>Airbus A318</td>
+                    <td>Milan</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>Landed 12:20</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:20</td>
+                    <td>SA7874</td>
+                    <td><img src="images\South African Airways.png" alt="South African Airways"></td>
+                    <td>South African Airways</td>
+                    <td>Airbus A330</td>
+                    <td></td>
+                    <td>Capetown</td>
+                    <td>1</td>
+                    <td>Departed 12:40</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:24</td>
+                    <td>QR5911</td>
+                    <td><img src="images\Qatar Airways.png" alt="Qatar Airways"></td>
+                    <td>Qatar Airways</td>
+                    <td>Airbus A330</td>
+                    <td>Munich</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>Landed 12:27</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:25</td>
+                    <td>AC9944</td>
+                    <td><img src="images\Air Canada.png" alt="Air Canada"></td>
+                    <td>Air Canada</td>
+                    <td>Boeing 747</td>
+                    <td></td>
+                    <td>Toronto</td>
+                    <td>3</td>
+                    <td>Gate Closed</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:27</td>
+                    <td>BA817</td>
+                    <td><img src="images\British Airways.png" alt="British Airways"></td>
+                    <td>British Airways</td>
+                    <td>Airbus A340</td>
+                    <td></td>
+                    <td>Madrid</td>
+                    <td>4</td>
+                    <td>Delayed to 14:00</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:30</td>
+                    <td>BA798</td>
+                    <td><img src="images\British Airways.png" alt="British Airways"></td>
+                    <td>British Airways</td>
+                    <td>Boeing 777</td>
+                    <td>Madrid</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>Landed 12:29</td>
+                </tr>
+                <tr>
+                    <td class="arrival">Arrival</td>
+                    <td>12:35</td>
+                    <td>AA6223</td>
+                    <td><img src="images\American Airlines.png" alt="American Airlines"></td>
+                    <td>American Airlines</td>
+                    <td>Airbus A380</td>
+                    <td>New York</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>Landed 12:46</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:35</td>
+                    <td>VS045</td>
+                    <td><img src="images\Virgin.png" alt="Virgin"></td>
+                    <td>Virgin</td>
+                    <td>Embraer ERJ</td>
+                    <td></td>
+                    <td>Milan</td>
+                    <td>2</td>
+                    <td>Estimated 13:05</td>
+                </tr>
+                <tr>
+                    <td class="departure">Departure</td>
+                    <td>12:39</td>
+                    <td>LH919</td>
+                    <td><img src="images\Lufthansa.png" alt="Lufthansa"></td>
+                    <td>Lufthansa</td>
+                    <td>Boeing 767</td>
+                    <td></td>
+                    <td>Frankfurt</td>
+                    <td>1</td>
+                    <td>Estimated 13:10</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <input type="text" placeholder="Phone" id="phoneNumber"
+                pattern="\+[0-9]{11,}" required><br>
+            <input type="text" placeholder="Email" id="emailName"
+                pattern="\w+@[A-Za-z0-9_.]+\.\w+" required><br>
+            <input type="submit" value="Отправить данные на телефон">
+        </form>
     </body>
 </html>
