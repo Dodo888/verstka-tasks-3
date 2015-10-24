@@ -95,7 +95,7 @@ tbody tr:hover
 .city[value="Dublin"] ~ table tbody tr:not(.dublin),
 .city[value="Milan"] ~ table tbody tr:not(.milan),
 .city[value="Paris"] ~ table tbody tr:not(.paris),
-.city[value="Yekaterinburg"] ~ table tbody tr:not(.yekaterinburg)
+.city[value="Yekaterinburg"] ~ table tbody tr:not(.yekaterinburg),
 .city[value="Melbourne"] ~ table tbody tr:not(.melbourne),
 .city[value="Capetown"] ~ table tbody tr:not(.capetown),
 .city[value="Munich"] ~ table tbody tr:not(.munich),
