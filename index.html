@@ -7,10 +7,18 @@
     </head>
     <body>
         <input
+            class="city"
             type="text"
             placeholder="Город отправления"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
+        <select
+            class="flightType"
+            onchange="this.setAttribute('value', this.options[this.options.selectedIndex].value)">
+            <option value="all">All</option>
+            <option value="departure">Departure</option>
+            <option value="arrival">Arrival</option>
+        </select>
         <table>
             <thead>
                 <tr>
@@ -39,8 +47,8 @@
                 </tr>
             </tfoot>
             <tbody>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure dublin">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:00</td>
                     <td>EI159</td>
                     <td><img src="images/Aer Lingus.png" alt="Aer Lingus"></td>
@@ -51,8 +59,8 @@
                     <td>2</td>
                     <td>Departed 12:20</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure milan">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:03</td>
                     <td>BA562</td>
                     <td><img src="images/British Airways.png" alt="British Airways"></td>
@@ -63,8 +71,8 @@
                     <td>5</td>
                     <td>Departed 12:23</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival toronto">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:04</td>
                     <td>AC6005</td>
                     <td><img src="images/Air Canada.png" alt="Air Canada"></td>
@@ -75,8 +83,8 @@
                     <td>4</td>
                     <td>Landed 12:05</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure paris">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:04</td>
                     <td>LH916</td>
                     <td><img src="images/Lufthansa.png" alt="Lufthansa"></td>
@@ -87,8 +95,8 @@
                     <td>2</td>
                     <td>Departed 12:30</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival yekaterinburg">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:09</td>
                     <td>SU2584</td>
                     <td><img src="images/Aeroflot.png" alt="Aeroflot"></td>
@@ -99,8 +107,8 @@
                     <td>4</td>
                     <td>Landed 12:15</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival melbourne">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:15</td>
                     <td>VS7955</td>
                     <td><img src="images/Virgin.png" alt="Virgin"></td>
@@ -111,8 +119,8 @@
                     <td>5</td>
                     <td>Expected 13:40</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival milan">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:20</td>
                     <td>EK5101</td>
                     <td><img src="images/Emirates.png" alt="Emirates"></td>
@@ -123,8 +131,8 @@
                     <td>2</td>
                     <td>Landed 12:20</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure capetown">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:20</td>
                     <td>SA7874</td>
                     <td><img src="images/South African Airways.png" alt="South African Airways"></td>
@@ -135,8 +143,8 @@
                     <td>1</td>
                     <td>Departed 12:40</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival munich">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:24</td>
                     <td>QR5911</td>
                     <td><img src="images/Qatar Airways.png" alt="Qatar Airways"></td>
@@ -147,8 +155,8 @@
                     <td>5</td>
                     <td>Landed 12:27</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure toronto">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:25</td>
                     <td>AC9944</td>
                     <td><img src="images/Air Canada.png" alt="Air Canada"></td>
@@ -159,8 +167,8 @@
                     <td>3</td>
                     <td>Gate Closed</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure madrid">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:27</td>
                     <td>BA817</td>
                     <td><img src="images/British Airways.png" alt="British Airways"></td>
@@ -171,8 +179,8 @@
                     <td>4</td>
                     <td>Delayed to 14:00</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival madrid">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:30</td>
                     <td>BA798</td>
                     <td><img src="images/British Airways.png" alt="British Airways"></td>
@@ -183,8 +191,8 @@
                     <td>2</td>
                     <td>Landed 12:29</td>
                 </tr>
-                <tr>
-                    <td class="arrival">Arrival</td>
+                <tr class="arrival newyork">
+                    <td><img src="images/arrival.png" alt="Arrival">Arrival</td>
                     <td>12:35</td>
                     <td>AA6223</td>
                     <td><img src="images/American Airlines.png" alt="American Airlines"></td>
@@ -195,8 +203,8 @@
                     <td>5</td>
                     <td>Landed 12:46</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure milan">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:35</td>
                     <td>VS045</td>
                     <td><img src="images/Virgin.png" alt="Virgin"></td>
@@ -207,8 +215,8 @@
                     <td>2</td>
                     <td>Estimated 13:05</td>
                 </tr>
-                <tr>
-                    <td class="departure">Departure</td>
+                <tr class="departure frankfurt">
+                    <td><img src="images/departure.png" alt="Departure">Departure</td>
                     <td>12:39</td>
                     <td>LH919</td>
                     <td><img src="images/Lufthansa.png" alt="Lufthansa"></td>
@@ -222,9 +230,9 @@
             </tbody>
         </table>
         <form>
-            <input type="text" placeholder="Phone" id="phoneNumber"
+            <input type="tel" placeholder="Phone" id="phoneNumber"
                 pattern="\+[0-9]{11,}" required><br>
-            <input type="text" placeholder="Email" id="emailName"
+            <input type="email" placeholder="Email" id="emailName"
                 pattern="\w+@[A-Za-z0-9_.]+\.\w+" required><br>
             <input type="submit" value="Отправить данные на телефон">
         </form>

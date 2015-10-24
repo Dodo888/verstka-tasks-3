@@ -1,6 +1,6 @@
 table
 {
-    border: 1px solid #000000;
+    border: 1px solid #000;
     border-collapse: collapse;
     width: 100%;
     overflow: hidden;
@@ -8,7 +8,7 @@ table
 
 tr
 {
-    border: 1px solid #000000;
+    border: 1px solid #000;
 }
 
 td
@@ -25,36 +25,23 @@ tr:nth-child(even) td:after
     left: 0;
     top: 0;
     height: 100%;
-    width: 150px;
-    z-index: -2;
+    width: 100%;
+    z-index: -3;
 }
 
 td:hover:before
 {
     content: "";
     position: absolute;
-    background-color: #cccccc;
+    background-color: #ccc;
     left: 0;
     top: -1000px;
     height: 6000px;
     width: 100%;
-    z-index: -1;
-
+    z-index: -2;
 }
 
-td:hover:after
-{
-    content: "";
-    position: absolute;
-    background-color: #cccccc;
-    left: -200px;
-    top: 0;
-    height: 100%;
-    width: 300px;
-    z-index: -1;
-}
-
-td, td:hover:after
+td
 {
     width: 130px;
 }
@@ -67,43 +54,54 @@ tfoot tr
 
 tbody tr:hover
 {
-    background: #cccccc;
+    background: #ccc;
 }
 
-.departure::before
-{
-    display: inline-block;
-    background-image: url(images/departure.png);
-    width: 39px;
-    height: 39px;
-    content: "";
-}
-
-.arrival::before
-{
-    display: inline-block;
-    background-image: url(images/arrival.png);
-    width: 39px;
-    height: 39px;
-    content: "";
-}
-
-input[type="text"]:valid ~ input[type="submit"]
+[type="tel"]:valid ~ [type="submit"],
+[type="email"]:valid ~ [type="submit"]
 {
     display: inline-block;
 }
 
-input[type="text"]:invalid ~ input[type="submit"]
+[type="tel"]:invalid ~ [type="submit"],
+[type="email"]:invalid ~ [type="submit"]
 {
     display: none;
 }
 
-input[type="text"]:invalid
+[type="tel"]:invalid,
+[type="email"]:invalid
 {
     background: #fdd;
 }
 
-input[type="text"]:valid
+[type="tel"]:valid,
+[type="email"]:valid
 {
     background: #dfd;
+}
+
+.flightType[value="departure"] ~ table tr.arrival
+{
+    display: none;
+}
+
+.flightType[value="arrival"] ~ table tr.departure
+{
+    display: none;
+}
+
+.city[value="Toronto"] ~ table tbody tr:not(.toronto),
+.city[value="Dublin"] ~ table tbody tr:not(.dublin),
+.city[value="Milan"] ~ table tbody tr:not(.milan),
+.city[value="Paris"] ~ table tbody tr:not(.paris),
+.city[value="Yekaterinburg"] ~ table tbody tr:not(.yekaterinburg)
+.city[value="Melbourne"] ~ table tbody tr:not(.melbourne),
+.city[value="Capetown"] ~ table tbody tr:not(.capetown),
+.city[value="Munich"] ~ table tbody tr:not(.munich),
+.city[value="Madrid"] ~ table tbody tr:not(.madrid),
+.city[value="New York"] ~ table tbody tr:not(.newyork),
+.city[value="Frankfurt"] ~ table tbody tr:not(.frankfurt)
+{
+    display: none;
 }
